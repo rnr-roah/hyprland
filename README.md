@@ -1,2 +1,2 @@
-#Hyprland, waybar and rofi configs, feels free to use them :)
+# Hyprland, waybar and rofi configs, feels free to use them :)
 
