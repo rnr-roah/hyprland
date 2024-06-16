@@ -1,0 +1,47 @@
+{
+	"pyprland": {
+		"plugins": ["scratchpads", "magnify"]
+	},
+	"scratchpads": {
+
+	  "alacritty":{
+		"command": "alacritty --class scratchpad",
+		"margin": 50,
+		"unfocus": "hide",
+		"animation" : "fromTop"
+       	  },
+          "micro":{
+	       "command": "kitty --class scratchpad -e micro",
+	       "margin" : 50,
+	       "unfocus": "hide",
+	       "animation": "fromtop"
+	  },
+	  "ranger":{
+	 	  "command": "alacritty --class scratchpad -e ranger",
+		  "margin": 50,
+		  "unfocus": "hide",
+		  "animation" : "fromTop"
+	  },
+	  "pavucontrol": {
+		  "command" : "pavucontrol",
+		  "margin": 50,
+		  "unfocus": "hide",
+		  "animation" : "fromTop"
+	  },
+          "wifi": {
+		  "command" : "alcritty -e wifi",
+		  "margin": 20,
+		  "unfocus": "hide",
+		  "animation" : "fromTop"
+	  },
+
+	  "htop": {
+                  "command" : "alacritty --class scratchpad -e htop",
+		  "margin": 50,
+		  "unfocus" : "hide",
+		  "animation" : "fromtop"
+	  }
+	  
+        }
+}
+
