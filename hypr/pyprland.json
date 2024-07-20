@@ -29,7 +29,7 @@
 		  "animation" : "fromTop"
 	  },
           "wifi": {
-		  "command" : "alcritty -e wifi",
+		  "command" : "alacritty -e wifi",
 		  "margin": 20,
 		  "unfocus": "hide",
 		  "animation" : "fromTop"

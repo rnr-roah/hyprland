@@ -1,3 +1,7 @@
-# Hyprland, waybar and rofi configs, feel free to use them :)
+# Hyprland, waybar and rofi configs, feels free to use them :)
 <br>
-![startup](https://raw.githubusercontent.com/rnr-roah/hyprland/main/screenshots/startup.png) 
+![Screenshot of hyprland](screenshots/startup.png)
+![Screenshot of hyprland](screenshots/neofetch.png)
+![Screenshot of hyprland](screenshots/processes.png)
+## Waybar
+![Screenshot of hyprland](screenshots/waybar.png)

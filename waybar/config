@@ -6,7 +6,7 @@
     "modules-right": ["hyprland/workspaces", "backlight","pulseaudio", "network","battery" ,"clock"],
     "custom/arch": {
       "format": " ",
-      "on-click": "rofi -show drun"
+      "on-click": "tofi-drun --drun-launch=true"
     },
     "custom/cava_test": {
         "format": "{}",
@@ -38,7 +38,7 @@
              		"7": "7",
              		"8": "8",
              		"9": "9",
-             		"10": "0"
+             		"10": ""
           }
     },
     "clock": {
@@ -80,14 +80,15 @@
       "on-click": "kitty -e wifi"
     },
     "battery": {
-      "format": "<span color='#a8cd76'>{icon}</span> {capacity}%",
-      //"format-alt": "{time} {icon}",
-      "format-icons": ["", "", "", "", "", "", "", "", "", "", ""],
+      "format-alt": "<span color='#a8cd76'>{icon}</span> {capacity}%",
+      "format": "<span color='#a8cd76'>{time}{icon}</span>",
+      "on-click-right": "alacritty -e htop",
+      "format-icons": ["", "󰁺", "󰁻", "", "", "", "", "󰂀", "󰂁", "󰂂", ""],
       "format-charging": "<span color='#a8cd76'></span> {capacity}%"
     },
     "network": {
-    "format-wifi": "󰒢 {essid}",
-    "format-alt" : "󰒢 {bandwidthTotalBits}",
+    "format-alt": "{essid}",
+    "format-wifi" : "<span foreground='#9ece6a'>󰒢</span> {bandwidthTotalBits}",
     "on-click": "",
     "on-click-right": "kitty -e wifi",
     "format-ethernet": " wired",
@@ -135,7 +136,7 @@
     "custom/playerctl": {
      "format": "{icon}  <span>{}</span>",
      "return-type": "json",
-     "max-length": 55,
+     "max-length": 30,
      "exec": "playerctl -a metadata --format '{\"text\": \"  {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
      "on-click-middle": "playerctl previous",
      "on-click": "playerctl play-pause",
