@@ -5,3 +5,5 @@
 ![Screenshot of hyprland](screenshots/processes.png)
 ## Waybar
 ![Screenshot of hyprland](screenshots/waybar.png)
+
+## You can copy and use the dotfiles as you like from this repo.
